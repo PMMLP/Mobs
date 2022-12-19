@@ -24,7 +24,7 @@ abstract class Animal extends AgeableMob {
             $this->inLove -= $tickDiff;
 
             if($this->inLove % 10 === 0) {
-                $this->getWorld()->addParticle($this->location->add(random_int(-5, 5) / 10, random_int(-5, 5) / 10, random_int(-5, 5) / 10), new HeartParticle());
+                $this->getWorld()->addParticle($this->location->add(random_int(-5, 5) / 10, random_int(0, 5) / 10, random_int(-5, 5) / 10), new HeartParticle());
             }
         }
         return parent::entityBaseTick($tickDiff);
