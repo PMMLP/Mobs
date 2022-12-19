@@ -37,7 +37,7 @@
 
 # Screenshots
 
-
+![Animals](https://github.com/PMMLP/Mobs/blob/V1.0.0/images/animals.png)
 
 # Config
 
