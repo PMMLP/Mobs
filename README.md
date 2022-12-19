@@ -11,7 +11,7 @@
 ```
 
 # Note
-This project takes quite a lot of time and I probably can not do it all my self. Every help is welcome and appreciated :)
+This project takes quite a lot of time, and I probably can not do it all myself. Every help is welcome and appreciated :)
 
 # Mobs List
 
