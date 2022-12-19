@@ -13,6 +13,9 @@
 # Note
 This project takes quite a lot of time, and I probably can not do it all myself. Every help is welcome and appreciated :)
 
+This plugin is not meant to be efficient
+[Timing](https://timings.pmmp.io/?id=250774) with 20 mobs
+
 # Mob List
 
 ### Animals
