@@ -10,24 +10,120 @@
 ✅️ Made with 💖
 ```
 
-## Mobs implemented
+# Note
+This project takes quite a lot of time and I probably can not do it all my self. Every help is welcome and appreciated :)
 
-### Animal
-```
-✅️Pigs
-✅️Sheep
-✅️Cow
-✅️Chicken
-```
+# Mobs List
+
+### Animals
+| Name           | Implemented | Note                   |
+|----------------|-----------|------------------------|
+| `Allay`        | ❌         |
+| `Axolotl`      | ❌         |
+| `Bee`          | ❌         |
+| `Cat`          | ❌         |
+| `Camel`        | ❌         |
+| `Cod`          | ❌         |
+| `Cow`          | ✅         |
+| `Chicken`      | ✅         | Jockey not implemented |
+| `Dolphin`      | ❌         |
+| `Fox`          | ❌         |
+| `Frog`         | ❌         |
+| `Goat`         | ❌         |
+| `Horse`        | ❌         |
+| `Iron Golem`   | ❌         |
+| `Mushroom Cow` | ❌         |
+| `Ocelot`       | ❌         |
+| `Panda`        | ❌         |
+| `Parrot`       | ❌         |
+| `Pig`          | ✅         | Riding not implemented |
+| `Polar Bear`   | ❌         |
+| `Pufferfish`   | ❌         |
+| `Rabbit`       | ❌         |
+| `Salmon`       | ❌         |
+| `Sheep`        | ✅         | `_jeb`  not implemented |
+| `Snow Golem`   | ❌         |
+| `Squid`        | ❌         |
+| `Tropical Fish` | ❌         |
+| `Turtle`       | ❌         |
+| `Wolf`         | ❌         |
+
+### Ambient
+| Name  | Implemented | Note |
+|-------|-----------|------|
+| `Bat` | ❌         |
+
+### Boss
+| Name           | Implemented | Note |
+|----------------|-----------|------|
+| `Ender Dragon` | ❌         |
+| `Wither`       | ❌         |
+
+### Monster
+| Name                  | Implemented | Note |
+|-----------------------|-----------|------|
+| `Blaze`               | ❌         |
+| `Cave Spider`         | ❌         |
+| `Creeper`             | ❌         |
+| `Drowned`             | ❌         |
+| `Elder Guardian`      | ❌         |
+| `Ender Man`           | ❌         |
+| `Endermite`           | ❌         |
+| `Evoker`              | ❌         |
+| `Ghast`               | ❌         |
+| `Giant`               | ❌         |
+| `Guardian`            | ❌         |
+| `Hoglin`              | ❌         |
+| `Husk`                | ❌         |
+| `Illager`             | ❌         |
+| `Illusioner`          | ❌         |
+| `Magma Cube`          | ❌         |
+| `Phantom`             | ❌         |
+| `Piglin`              | ❌         |
+| `Pillager`            | ❌         |
+| `Shulker`             | ❌         |
+| `Silverfish`          | ❌         |
+| `Skeleton`            | ❌         |
+| `Slime`               | ❌         |
+| `Spellcaster Illager` | ❌         |
+| `Spider`              | ❌         |
+| `Stray`               | ❌         |
+| `Strider`             | ❌         |
+| `Vex`                 | ❌         |
+| `Vindicator`          | ❌         |
+| `Warden`              | ❌         |
+| `Witch`               | ❌         |
+| `Wither Skeleton`     | ❌         |
+| `Zoglin`              | ❌         |
+| `Zombie`              | ❌         |
+| `Zombie Villager`     | ❌         |
+| `Zombified Piglin`    | ❌         |
+
+### NPC
+| Name               | Implemented | Note |
+|--------------------|-----------|------|
+| `Villager`         | ❌         |
+| `Wandering Trader` | ❌         |
+
+### Vehicle
+| Name                     | Implemented | Note                                       |
+|--------------------------|-----------|--------------------------------------------|
+| `Boat`                   | ❌         |
+| `Chest Boat`             | ❌         |
+| `Minecart`               | ❌         |
+| `Minecart Chest`         | ❌         |
+| `Minecart Command Block` | ❌         |
+| `Minecart Furnace`       | ❌         |
+| `Minecart Hopper`        | ❌         |
+| `Minecart TNT`           | ❌         |
+| `Minecart Spawner`       | ❌         | It´s a JE Feature, add with custom entity? |
 
 # Missing Features
 
 ```
 🚫 Leashes
-🚫 Pig riding
-🚫 _jeb sheep
-🚫 Chicken jockey
 🚫 Individual block cost
+🚫 Natural spawning
 ```
 
 
@@ -81,4 +177,10 @@ version: 1.0.0
 [Patreon](https://patreon.com/Matze998)
 
 # Credits
+
+This plugin is basically a copy of Minecraft JE mob system
+
+Some parts where taken from [Altay](https://github.com/TuranicTeam/Altay) and from an old project of mine
+
+
 Made by Matze, Dezember 2022
