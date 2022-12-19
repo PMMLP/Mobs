@@ -76,7 +76,8 @@ class Cow extends Animal {
         $inventory = $player->getInventory();
         $item = $inventory->getItemInHand();
         if($item->equals(VanillaItems::BUCKET(), true, false)) {
-            $inventory->setItemInHand($item->setCount($item->getCount() - 1));
+            $item->pop();
+            $inventory->setItemInHand($item);
             $inventory->addItem(VanillaItems::MILK_BUCKET());
 
             $this->getWorld()->addSound($this->location, new PlaySound("mob.cow.milk"));

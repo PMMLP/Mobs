@@ -9,10 +9,6 @@ use pocketmine\math\Vector3;
 use pocketmine\world\Position;
 
 class RandomPositionGenerator {
-    public static function findRandomPositionAwayFrom(Position $position, Vector3 $avoid, int $xzRange, int $yRange = 2): ?Vector3 {
-        self::findRandomPosition($position, $xzRange, $yRange, $avoid);
-    }
-
     public static function findRandomPosition(Position $position, int $xzRange, int $yRange = 2, ?Vector3 $avoid = null): ?Vector3 {
         $world = $position->getWorld();
 

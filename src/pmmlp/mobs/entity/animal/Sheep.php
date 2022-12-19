@@ -137,17 +137,21 @@ class Sheep extends Animal {
     public function onInteract(Player $player, Vector3 $clickPos): bool{
         $inventory = $player->getInventory();
         $item = $inventory->getItemInHand();
-        if($item->equals(VanillaItems::SHEARS(), true, false)) {
+        if($item->equals(VanillaItems::SHEARS(), false, false)) {
             if($this->isSheared() || $this->isBaby()) {
                 return false;
             }
-            /** @var Durable $item */
-            $item->applyDamage(1);
 
             $this->setSheared(true);
 
             $this->getWorld()->dropItem($this->location, VanillaBlocks::WOOL()->setColor($this->getColor())->asItem()->setCount(random_int(1, 3)));
             $this->getWorld()->addSound($this->location, new PlaySound("mob.sheep.shear"));
+
+            if(!$player->isCreative(true)) {
+                /** @var Durable $item */
+                $item->applyDamage(1);
+                $player->getInventory()->setItemInHand($item);
+            }
             return true;
         }
         if($item instanceof Dye) {
@@ -156,7 +160,10 @@ class Sheep extends Animal {
             }
             $this->setColor($item->getColor());
 
-            $player->getInventory()->setItemInHand($item->setCount($item->getCount() - 1));
+            if(!$player->isCreative(true)) {
+                $item->pop();
+                $player->getInventory()->setItemInHand($item);
+            }
             return true;
         }
         return parent::onInteract($player, $clickPos);
